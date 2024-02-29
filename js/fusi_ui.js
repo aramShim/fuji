@@ -11,7 +11,7 @@ function listItemActive(){
     var $parentListItem = $(this).closest('.list-item');
     $('.list-item').removeClass('active');
     $parentListItem.addClass('active');
-    $parentListItem.addClass('pause');
+    $parentListItem.addClass('pause'); 
     $('.player-wrap').addClass('active');
     itemPlayControl($parentListItem);
   });
@@ -19,7 +19,7 @@ function listItemActive(){
 }
 
 function itemPlayControl($clickedListItem) {
-  $clickedListItem.toggleClass('pause'); 
+  $clickedListItem.removeClass('pause'); 
   $('.play-btn-list .play i').toggleClass('bi-play-fill bi-pause-fill'); 
 }
 
