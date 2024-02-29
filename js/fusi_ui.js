@@ -11,6 +11,7 @@ function listItemActive(){
     var $parentListItem = $(this).closest('.list-item');
     $('.list-item').removeClass('active');
     $parentListItem.addClass('active');
+    $parentListItem.addClass('pause');
     $('.player-wrap').addClass('active');
     itemPlayControl($parentListItem);
   });

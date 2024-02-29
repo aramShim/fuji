@@ -337,7 +337,7 @@
     <div class="player-wrap ">
       <div class="playing_progress">
         <div class="bar-progress">
-          <input type="range" value="30"/>          
+          <input type="range" value="30" min="0" max="100"/>          
         </div>
       </div>
       <div class="player-controller flex">
@@ -352,10 +352,10 @@
           <div class="play-btn-list">
             <button type="button" class="prev"><i class="bi bi-skip-start-fill"></i></button>
             <button type="button" class="play">
-              <i class="bi bi-pause-fill"></i>
+              <i class="bi bi-play-fill"></i>
               <!--
                 [P] 일시정지 버튼을 누르면 bi-pause-fill-> bi-play-fill 클래스로 변경
-                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-pause-fill"></i>
               -->
             </button>
             <button type="button" class="next"><i class="bi bi-skip-end-fill"></i></button>
@@ -370,7 +370,7 @@
           <div class="volumn-area">
             <button type="button" class="volumn-btn"><i class="bi bi-volume-down-fill"></i></button>
             <div class="bar-volumn">
-              <input type="range" value="20"/>
+              <input type="range" value="20" min="0" max="100"/>
             </div>
           </div>
           <div class="item-actions">

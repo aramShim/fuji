@@ -327,8 +327,8 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none; 
   /* creating a custom design */
-  height: 5px;
-  width: 5px;
+  height: 15px;
+  width: 15px;
   background-color: #0cbe9a;
   border-radius: 50%;
   border: 2px solid #0cbe9a;
@@ -339,8 +339,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Thumb: Firefox */
 input[type="range"]::-moz-range-thumb {
-  height: 5px;
-  width: 5px;
+  height: 15px;
+  width: 15px;
   background-color: #0cbe9a;
   border-radius: 50%;
   border: 1px solid #0cbe9a;
