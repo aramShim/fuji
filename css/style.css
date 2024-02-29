@@ -140,7 +140,7 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   
 }
 
-@media (max-width: 890px){
+@media (max-width: 920px){
 
   .demo-wrap h1 {padding: 0 20px;}
   .demo {width: calc(100% - 30px);}
