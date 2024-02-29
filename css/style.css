@@ -82,7 +82,7 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 .player-wrap {position: fixed; bottom:0; left:0; width: 100%; background: #000; display: none;}
 .player-wrap.active {display: block;}
 
-.playing_progress {position: absolute; width: 100%; top: -14px; left: 0; z-index: 9;
+.playing_progress {position: absolute; width: 100%; top: -11px; left: 0; z-index: 9;
 --range-height : 12px;
 }
 .bar-progress input[type="range"]:active,
