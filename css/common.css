@@ -293,60 +293,46 @@ a.btn-xsm {font-size: 14px; padding: 6px 12px;}
 .btn.btn-icon {padding: 1.2rem}
 .btn.btn-icon i[class*="bi-"] {padding-right: 0; } 
 
-input[type="range"] {
-  /* removing default appearance */
+ input[type="range"] {
   -webkit-appearance: none;
   appearance: none; 
-  /* creating a custom design */
   width: 100%;
   cursor: pointer;
   outline: none;
-  /*  slider progress trick  */
-  overflow: hidden;
   border-radius: 16px;
 	margin: 0;
+	overflow: hidden; 
+	
 }
-
-/* Track: webkit browsers */
 input[type="range"]::-webkit-slider-runnable-track {
   height: 5px;
   background: #ccc;
   border-radius: 16px;
 }
-
-/* Track: Mozilla Firefox */
 input[type="range"]::-moz-range-track {
   height: 5px;
   background: #ccc;
   border-radius: 16px;
 }
-
-/* Thumb: webkit */
 input[type="range"]::-webkit-slider-thumb {
-  /* removing default appearance */
   -webkit-appearance: none;
   appearance: none; 
-  /* creating a custom design */
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   background-color: #0cbe9a;
   border-radius: 50%;
-  border: 2px solid #0cbe9a;
-  /*  slider progress trick  */
   box-shadow: -100vw 0 0 100vw #0cbe9a;
+	position: relative;
 }
-
-
-/* Thumb: Firefox */
 input[type="range"]::-moz-range-thumb {
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   background-color: #0cbe9a;
   border-radius: 50%;
-  border: 1px solid #0cbe9a;
-  /*  slider progress trick  */
   box-shadow: -100vw 0 0 100vw #0cbe9a;
-}
+} /**/
+
+
 
 
 

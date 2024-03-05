@@ -85,12 +85,13 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 .playing_progress {position: absolute; width: 100%; top: -11px; left: 0; z-index: 9;
 --range-height : 12px;
 }
-.bar-progress input[type="range"]:active,
+
+.playing_progress.active input[type="range"],
 .bar-progress:hover input[type="range"] {height: var(--range-height);}
-.bar-progress input[type="range"]:active::-webkit-slider-runnable-track ,
+.playing_progress.active input[type="range"]::-webkit-slider-runnable-track ,
 .bar-progress:hover input[type="range"]::-webkit-slider-runnable-track {height: var(--range-height);}
-.bar-progress:hover input[type="range"]::-moz-range-track,
-.bar-progress input[type="range"]:active::-moz-range-track {height: var(--range-height);}
+.playing_progress.active input[type="range"]::-moz-range-track,
+.bar-progress:hover input[type="range"]::-moz-range-track {height: var(--range-height);}
 .bar-progress:hover input[type="range"]::-webkit-slider-thumb,
 .bar-progress input[type="range"]:active::-webkit-slider-thumb {height: var(--range-height);}
 .bar-progress:hover input[type="range"]::-moz-range-thumb,

@@ -3,8 +3,23 @@ $(function(){
   
   itemAction();
   playControl();
-})
 
+  playRange();
+  volumnBtn();
+})
+function volumnBtn(){
+  $('.volumn-btn').click(function(){
+    $(this).find('i').toggleClass('bi-volume-down-fill bi-volume-mute-fill');
+  })
+}
+function playRange(){
+  $('.playing_progress').click(function(){
+    $(this).toggleClass('active');
+  })
+  $('.playing_progress').mouseover(function(){
+    $(this).removeClass('active');
+  })
+}
 function listItemActive(){
   $('.list-item a').click(function(e){
     e.preventDefault();
