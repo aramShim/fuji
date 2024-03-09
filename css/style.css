@@ -38,6 +38,8 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   }
   
   .list-item.active.pause > a .item-img:after {animation: none;} 
+  .list-item.active.pause > a:hover .item-img:after { content:''; background: rgba(0,0,0,.5) var(--play-img) center center no-repeat; background-size: auto; animation: none;  
+  }
   
 
 
