@@ -32,13 +32,12 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   
   .list-item > a:hover .item-img:after { background: rgba(0,0,0,.5) var(--play-img) center center no-repeat;}
   
-  .list-item.active > a .item-img:after { background: rgba(0,0,0,.5) url(../img/playing_white_50x50.png) center center no-repeat; animation: playing 2s steps(60) infinite; background-size: 3000px 50px; 
-  }
+  /* .list-item.active > a .item-img:after { background: rgba(0,0,0,.5) url(../img/playing_white_50x50.png) center center no-repeat; animation: playing 2s steps(60) infinite; background-size: 3000px 50px;   } */
+  .list-item.active > a .item-img:after {background: url(../img/music.png) no-repeat; background-size:100%; animation: rotateImg 3s linear 0s infinite forwards;}
   .list-item.active > a:hover .item-img:after { content:''; background: rgba(0,0,0,.5) var(--pause-img) center center no-repeat; background-size: auto; animation: none;  
   }
   
-  .list-item.active.pause > a .item-img:after { background: rgba(0,0,0,.5) var(--play-img) center center no-repeat;  
-  }
+  .list-item.active.pause > a .item-img:after {animation: none;} 
   
 
 
@@ -142,6 +141,11 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   100% {background-position-x:-3000px;}
   
 }
+@keyframes rotateImg
+{
+    0%{ transform: rotateZ(0); }
+    100%{ transform: rotateZ(360deg); }
+}
 
 @media (max-width: 920px){
 
@@ -160,8 +164,6 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   .volumn-area {display: none;}
   .control-center {position: absolute; top: 50%; right: 50px; transform: translateY(-50%);}
 
-  .list-item.active > a:hover .item-img:after { background: rgba(0,0,0,.5) url(../img/playing_white_50x50.png) center center no-repeat; animation: playing 2s steps(60) infinite; background-size: 3000px 50px;
-  }
 
 }
 
