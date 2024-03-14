@@ -14,6 +14,7 @@
 
   <!--[P] 이벤트 스크립트-->
   <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="https://unpkg.com/wavesurfer.js@7"></script>
   <script src="js/fusi_ui.js"></script>
   
   <!--
@@ -47,14 +48,47 @@
                 </div>
                 <div class="item-info">
                   <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweetBitterSweetBitterSweetBitterSweetBitterSweet</span>
+                  <span class="demo-title">Narayan x Daimy Lotus... v2</span>
                 </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
+                
                 <div class="item-duration">
+                  <div id="waveform1" class="wave-form"></div>
                   <span>02:58</span>
                 </div>
+
+                <div class="item-genre">Up-tempo</div>
+                <div class="item-vocal">F</div>
+              </a>
+              <div class="item-actions">
+                <button type="button" class="item-actions-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
+                </button>
+                <ul class="item-actions-list">
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-item flex">
+              <a href="" class="flex item-details">
+                <div class="item-no">2</div>
+                <div class="item-img">
+                  <!--앨범이미지-->
+                  <img src="img/music.png" alt="">
+                </div>
+                <div class="item-info">
+                  <span class="demo-cd">D00008493</span>
+                  <span class="demo-title">Narayan x Daimy Lotus... v2 - Tommy Advice</span>
+                </div>
+                
+                <div class="item-duration">
+                  <div id="waveform2" class="wave-form"></div>
+                  <span>02:58</span>
+                </div>
+
+                <div class="item-genre a-list">Up-tempo</div>
+                <div class="item-vocal a-list">F</div>
               </a>
               <div class="item-actions">
                 <button type="button" class="item-actions-btn">
@@ -68,267 +102,6 @@
               </div>
             </li>
 
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">2</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">3</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">4</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">5</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">6</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">7</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">8</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">9</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="list-item flex">
-              <a href="" class="flex item-details">
-                <div class="item-no">10</div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-cd">D00008493</span>
-                  <span class="demo-title">BitterSweet</span>
-                </div>
-                <div class="item-genre">
-                  <span>pop</span>
-                </div>
-                <div class="item-duration">
-                  <span>02:58</span>
-                </div>
-              </a>
-              <div class="item-actions">
-                <button type="button" class="item-actions-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#363853" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#363853"/></svg>
-                </button>
-                <ul class="item-actions-list">
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
-                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
-                </ul>
-              </div>
-            </li>
           </ul>
         </div>
       </div>

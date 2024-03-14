@@ -13,11 +13,12 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 
 .demo-wrap { padding-bottom: 120px;}
 .demo-wrap h1 {padding: 0px 50px; text-align: left; width: 100%; font-size: 0; height: 80px; display: flex; align-items: center;}
+.demo-wrap h1 img {width: 268px;}
 
 .demo {position: relative; background: #fff; width: 100%; /*padding: 30px 50px ;*/ border: 1px solid #ccc; width: calc(100% - 100px); margin: 0 auto; border-radius: 15px; }
 .demo-header { position: sticky; top:0; left:0; padding: 30px 50px;  background: #fff; z-index: 99; border-radius: 15px;}
 .demo-header .inner {display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ccc; padding: 10px 0 20px;}
-.demo-header h2 {font-size: 22px; font-weight: 800; word-break: keep-all;}
+.demo-header h2 {font-size: 20px; font-weight: 800; word-break: keep-all;}
 
 /* .demo-container {height: 700px;} */
 .demo-tracklist {padding-bottom: 20px;}
@@ -65,15 +66,19 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 
 .item-no {width: 30px; font-weight: 600}
 
-.item-img {position: relative;width: 50px; height: 50px; border-radius: 5px; overflow: hidden;}
+.item-img {width: 50px; position: relative; height: 50px; border-radius: 5px; overflow: hidden;}
 .item-img img {width: 100%; height: 100%;}
 
-.item-info {width: calc(100% - 30px - 50px - 200px); padding-left: 20px;}
-.item-info .demo-cd {font-size: 12px; display: inline-flex; align-items: center; justify-content: center;  border-radius: 5px; padding: 4px 12px; background-color: #f1f1f1; font-weight: 700; margin-right: 20px;}
-.item-info .demo-title { font-weight: 700; display: block;}
+.item-info {width: calc(40% - 30px - 50px - 100px - 30px); padding:0 20px;}
+.item-info .demo-cd {font-size: 11px; display: inline-flex; align-items: center; justify-content: center;  border-radius: 5px; padding: 4px 12px; background-color: #f1f1f1; font-weight: 700; margin-right: 20px;}
+.item-info .demo-title { font-weight: 700; display: block; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 
-.item-genre {width: 100px; text-align: center;}
-.item-duration {width: 100px; text-align: center; font-size: 14px;}
+
+.item-duration {width:60%; text-align: center; font-size: 14px; display: flex; align-items: center; justify-content: center;}
+.item-duration .wave-form {width: 100%; max-width: 500px; margin-right: 10px;}
+.item-duration span {font-size: 13px; }
+.item-genre {width: 100px; text-align: center; }
+.item-vocal {width: 30px; text-align: right;}
 
 .item-actions {font-size: 0; width: 50px; text-align: right;}
 .item-actions > button {font-size: 0; }
@@ -159,8 +164,11 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   .demo-header h2 {font-size: 18px;}
   .list-item.flex {padding: 16px 25px;}
 
-	.item-genre {display: none;}
-  .item-info {width: calc(100% - 30px - 50px - 100px); padding-left: 20px;}
+  .item-no {display: none;}
+	/* .item-genre {display: none;}
+  .item-vocal {display: none;} */
+  .item-info {width:calc(50% - 50px - 100px - 30px);}
+  .item-duration {width: calc(50%)}
 
   .playtime {display: none;}
   .volumn-area {display: none;}
@@ -174,9 +182,9 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   .btn-xsm, a.btn-xsm {font-size: 12px;}
   
   .item-no {display: none;}
-  .item-info {width: calc(100% - 50px - 60px)}
+  .item-info {width: ;}
   .item-info .demo-cd {font-size: 10px;}
-  .item-duration {font-size: 12px; width: 60px;}
+  .item-duration {font-size: 12px; }
   .player-controller > div {width: auto;}
   
   .play-btn-list button {width: 40px; height: 40px;}

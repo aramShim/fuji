@@ -93,7 +93,7 @@
 html, body{margin:0; padding:0; scroll-behavior: smooth; overscroll-behavior: contain;}
 html{-webkit-text-size-adjust:none; -webkit-font-smoothing:antialiased; }
 body{word-wrap:normal; word-break:keep-all; overflow-wrap:break-word; line-height:1.5;}
-body, input, textarea, select, table, button{font-size:16px; font-family:'nanumSquareNeo', 'malgun gothic', dotum, sans-serif; color:#212126; font-weight: 500;}
+body, input, textarea, select, table, button{font-size:14px; font-family:'nanumSquareNeo', 'malgun gothic', dotum, sans-serif; color:#212126; font-weight: 500;}
 
 .cera {font-family: 'cera','맑은 고딕', 'Malgun Gothic', arial, Verdana, Dotum, AppleGothic, sans-serif; font-weight: 500}
 

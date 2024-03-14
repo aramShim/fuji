@@ -6,7 +6,24 @@ $(function(){
 
   playRange();
   volumnBtn();
+
+  for($i=1; $i < 3; $i++){    
+    const wavesurfer = WaveSurfer.create({
+      container: '#waveform'+$i,
+      waveColor: '#ccc',
+      progressColor: '#0cbe9a',
+      url: 'audio/audio'+$i+'.mp3',
+      hideScrollbar: true,
+      height: 25,
+      barWidth: 1,
+      cursorWidth : 1,
+      maxCanvasWidth : 610,
+
+    })
+  }
+
 })
+
 function volumnBtn(){
   $('.volumn-btn').click(function(){
     $(this).find('i').toggleClass('bi-volume-down-fill bi-volume-mute-fill');
@@ -26,17 +43,14 @@ function listItemActive(){
     var $parentListItem = $(this).closest('.list-item');
     $('.list-item').removeClass('active');
     $parentListItem.addClass('active');
-    $parentListItem.addClass('pause'); 
+    $parentListItem.addClass('play'); 
+    
     $('.player-wrap').addClass('active');
-    itemPlayControl($parentListItem);
+    $('.play-btn-list .play i').toggleClass('bi-play-fill bi-pause-fill'); 
+
   });
-  
 }
 
-function itemPlayControl($clickedListItem) {
-  $clickedListItem.removeClass('pause'); 
-  $('.play-btn-list .play i').toggleClass('bi-play-fill bi-pause-fill'); 
-}
 
 function itemAction(){  
   $('.item-actions-btn').click(function(){
