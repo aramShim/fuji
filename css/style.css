@@ -69,12 +69,12 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 .item-img {width: 50px; position: relative; height: 50px; border-radius: 5px; overflow: hidden;}
 .item-img img {width: 100%; height: 100%;}
 
-.item-info {width: calc(40% - 30px - 50px - 100px - 30px); padding:0 20px;}
+.item-info {width: calc(50% - 30px - 50px - 100px - 30px); padding:0 20px;}
 .item-info .demo-cd {font-size: 11px; display: inline-flex; align-items: center; justify-content: center;  border-radius: 5px; padding: 4px 12px; background-color: #f1f1f1; font-weight: 700; margin-right: 20px;}
 .item-info .demo-title { font-weight: 700; display: block; width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 
 
-.item-duration {width:60%; text-align: center; font-size: 14px; display: flex; align-items: center; justify-content: center;}
+.item-duration {width:50%; text-align: center; font-size: 14px; display: flex; align-items: center; justify-content: center;}
 .item-duration .wave-form {width: 100%; max-width: 500px; margin-right: 10px;}
 .item-duration span {font-size: 13px; }
 .item-genre {width: 100px; text-align: center; }
@@ -153,7 +153,14 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
     0%{ transform: rotateZ(0); }
     100%{ transform: rotateZ(360deg); }
 }
-
+@media (max-width: 1440px){
+  .item-info {width: calc(60% - 30px - 50px - 100px - 30px)}
+  .item-duration {width: 40%;}
+}
+@media (max-width: 1280px){
+  .item-info {width: calc(70% - 30px - 50px - 100px - 30px)}
+  .item-duration {width: 30%;}
+}
 @media (max-width: 920px){
 
   .demo-wrap h1 {padding: 0 20px;}
@@ -165,9 +172,9 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   .list-item.flex {padding: 16px 25px;}
 
   .item-no {display: none;}
-	/* .item-genre {display: none;}
-  .item-vocal {display: none;} */
-  .item-info {width:calc(50% - 50px - 100px - 30px);}
+	.item-genre {display: none;} 
+  .item-vocal {display: none;} 
+  .item-info {width:calc(50% - 50px);}
   .item-duration {width: calc(50%)}
 
   .playtime {display: none;}
@@ -180,11 +187,12 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 @media (max-width: 600px){
   body, input, textarea, select, table, button {font-size: 14px;}
   .btn-xsm, a.btn-xsm {font-size: 12px;}
-  
-  .item-no {display: none;}
-  .item-info {width: ;}
+
+  .item-img {width: 40px; height: 40px;}
+
+  .item-info {width:calc(100% - 40px);}
   .item-info .demo-cd {font-size: 10px;}
-  .item-duration {font-size: 12px; }
+  .item-duration {display: none; }
   .player-controller > div {width: auto;}
   
   .play-btn-list button {width: 40px; height: 40px;}
