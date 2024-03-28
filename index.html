@@ -48,38 +48,42 @@
               <div class="flex header-border">
                 <div class="flex item-details">
                   <div class="item-no">
-                    <label class="c_opt c_check">
-                      <input class="c_opt__btn input_check__btn" type="checkbox" checked>
+                    <label class="c_opt c_check" for="allSelect">
+                      <input class="c_opt__btn input_check__btn" type="checkbox" id="allSelect">
                       <span class="c_opt__label input_check__label-line square"></span>
                     </label>
                   </div>
-                  <div class="item-img"></div>
-                  <div class="item-info">Title</div>
+                  <div class="item-info-wrap">
+                    <div class="item-img"></div>
+                    <div class="item-info">Title</div>
+                  </div>
                   <div class="item-duration">Duration</div>
                   <div class="item-genre">Tempo/Vocal</div>
                   <div class="item-cd">Code</div>
                 </div>
-                <div class="item-actions"></div>
+                <div class="item-actions">Download</div>
               </div>
             </div>          
           </div>
           <ul class="demo-tracklist">
             <!--[P][S] list-item의 a를 클릭하고 재생이 되면 active 클래스 추가 (listItemActive();)-->
             <li class="list-item flex">
-              <a href="" class="flex item-details">
+              <div href="" class="flex item-details">
                 <div class="item-no">
-                  <label class="c_opt c_check">
-                    <input class="c_opt__btn input_check__btn" type="checkbox">
+                  <label class="c_opt c_check" for="select1">
+                    <input class="c_opt__btn input_check__btn" type="checkbox" id="select1">
                     <span class="c_opt__label input_check__label-line square"></span>
                   </label>
                 </div>
-                <div class="item-img">
-                  <!--앨범이미지-->
-                  <img src="img/music.png" alt="">
-                </div>
-                <div class="item-info">
-                  <span class="demo-title">Narayan x Daimy Lotus... v2</span>
-                  <span class="demo-artist">artist-name</span>
+                <div class="js-play item-info-wrap flex">
+                  <div class="item-img ">
+                    <!--앨범이미지-->
+                    <img src="img/music.png" alt="">
+                  </div>
+                  <div class="item-info">
+                    <span class="demo-title">Narayan x Daimy Lotus... v2</span>
+                    <span class="demo-artist">artist-name</span>
+                  </div>
                 </div>
                 
                 <div class="item-duration">
@@ -89,7 +93,85 @@
 
                 <div class="item-genre">Up-tempo/F</div>
                 <div class="item-cd"><span class="demo-cd">15784124</span></div>
-              </a>
+              </div>
+              <div class="item-actions">
+                <button type="button" class="item-actions-btn js-item-actions-btn">
+                  <svg width="18" height="18" viewBox="-5 -5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-download"><path d="m8 6.641 1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2" fill="#4f5169"/></svg>
+                </button>
+                <ul class="item-actions-list">
+                  <li class="all-download"><a href=""><i class="bi bi-download"></i><span class="cera">ALL</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="list-item flex active play">
+              <div href="" class="flex item-details">
+                <div class="item-no">
+                  <label class="c_opt c_check" for="select2">
+                    <input class="c_opt__btn input_check__btn" type="checkbox" id="select2" checked>
+                    <span class="c_opt__label input_check__label-line square"></span>
+                  </label>
+                </div>
+                <div class="js-play item-info-wrap flex">
+                  <div class="item-img ">
+                    <!--앨범이미지-->
+                    <img src="img/music.png" alt="">
+                  </div>
+                  <div class="item-info">
+                    <span class="demo-title">Narayan x Daimy Lotus... v2</span>
+                    <span class="demo-artist">artist-name</span>
+                  </div>
+                </div>
+                <div class="item-duration">
+                  <div id="waveform2" class="wave-form"></div>
+                  <span>02:58</span>
+                </div>
+
+                <div class="item-genre">Up-tempo/F</div>
+                <div class="item-cd"><span class="demo-cd">15784124</span></div>
+              </div>
+              <div class="item-actions">
+                <button type="button" class="item-actions-btn js-item-actions-btn">
+                  <svg width="18" height="18" viewBox="-5 -5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-download"><path d="m8 6.641 1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2" fill="#4f5169"/></svg>
+                </button>
+                <ul class="item-actions-list">
+                  <li class="all-download"><a href=""><i class="bi bi-download"></i><span class="cera">ALL</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
+                  <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="list-item flex active pause">
+              <div href="" class="flex item-details">
+                <div class="item-no">
+                  <label class="c_opt c_check" for="select3">
+                    <input class="c_opt__btn input_check__btn" type="checkbox" id="select3">
+                    <span class="c_opt__label input_check__label-line square"></span>
+                  </label>
+                </div>
+                <div class="js-play item-info-wrap flex">
+                  <div class="item-img ">
+                    <!--앨범이미지-->
+                    <img src="img/music.png" alt="">
+                  </div>
+                  <div class="item-info">
+                    <span class="demo-title">Narayan x Daimy Lotus... v2</span>
+                    <span class="demo-artist">artist-name</span>
+                  </div>
+                </div>
+                <div class="item-duration">
+                  <div id="waveform3" class="wave-form"></div>
+                  <span>02:58</span>
+                </div>
+
+                <div class="item-genre">Up-tempo/F</div>
+                <div class="item-cd"><span class="demo-cd">15784124</span></div>
+              </div>
               <div class="item-actions">
                 <button type="button" class="item-actions-btn js-item-actions-btn">
                   <svg width="18" height="18" viewBox="-5 -5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-download"><path d="m8 6.641 1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2" fill="#4f5169"/></svg>
@@ -118,6 +200,7 @@
         <div class="control-left flex">
           <div class="control-info">
             <span class="demo-title">Narayan x Daimy Lotus... v2</span>
+            <span class="demo-artist">artist-name</span>
           </div>
         </div>
         <div class="control-center flex">
@@ -132,13 +215,13 @@
             </button>
             <button type="button" class="next"><i class="bi bi-skip-end-fill"></i></button>
           </div>
-        </div>
-        <div class="control-right flex">
+          <div id="waveform4" class="wave-form"></div>
           <div class="playtime">
             <span class="now">00:01</span>
             <span class="remain">04:06</span>
           </div>
-
+        </div>
+        <div class="control-right flex">
           <div class="volumn-area">
             <button type="button" class="volumn-btn"><i class="bi bi-volume-down-fill"></i></button>
             <div class="bar-volumn">
@@ -146,10 +229,11 @@
             </div>
           </div>
           <div class="item-actions">
-            <button type="button" class="item-actions-btn">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.353 8.95A7.51 7.51 0 0 1 8.95 3.353c2.006-.47 4.094-.47 6.1 0a7.51 7.51 0 0 1 5.597 5.597c.47 2.006.47 4.094 0 6.1a7.51 7.51 0 0 1-5.597 5.597c-2.006.47-4.094.47-6.1 0a7.51 7.51 0 0 1-5.597-5.597 13.35 13.35 0 0 1 0-6.1Z" stroke="#bcbcbc" stroke-width="1.5"/><path d="M9.055 12c0 .552-.46 1-1.028 1C7.46 13 7 12.552 7 12s.46-1 1.027-1c.568 0 1.028.448 1.028 1m3.972 0c0 .552-.46 1-1.027 1s-1.027-.448-1.027-1 .46-1 1.027-1 1.027.448 1.027 1M17 12c0 .552-.46 1-1.027 1-.568 0-1.028-.448-1.028-1s.46-1 1.028-1c.567 0 1.027.448 1.027 1" fill="#bcbcbc"/></svg>
+            <button type="button" class="item-actions-btn js-item-actions-btn">
+              <svg width="20" height="20" viewBox="-5 -5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-download"><path d="m8 6.641 1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2" fill="#bcbcbc"/></svg>
             </button>
             <ul class="item-actions-list">
+              <li class="all-download"><a href=""><i class="bi bi-download"></i><span class="cera">ALL</span></a></li>
               <li><a href=""><i class="bi bi-download"></i><span class="cera">MP3</span></a></li>
               <li><a href=""><i class="bi bi-download"></i><span class="cera">WAV</span></a></li>
               <li><a href=""><i class="bi bi-download"></i><span class="cera">AIFF</span></a></li>

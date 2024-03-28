@@ -7,7 +7,7 @@ $(function(){
   playRange();
   volumnBtn();
 
-  for($i=1; $i < 3; $i++){    
+  for($i=1; $i < 5; $i++){    
     const wavesurfer = WaveSurfer.create({
       container: '#waveform'+$i,
       waveColor: '#ccc',
@@ -38,7 +38,7 @@ function playRange(){
   })
 }
 function listItemActive(){
-  $('.list-item a').click(function(e){
+  $('.js-play').click(function(e){
     e.preventDefault();
     var $parentListItem = $(this).closest('.list-item');
     $('.list-item').removeClass('active');
