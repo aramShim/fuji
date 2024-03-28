@@ -53,7 +53,7 @@ function listItemActive(){
 
 
 function itemAction(){  
-  $('.item-actions-btn').click(function(){
+  $('.js-item-actions-btn').click(function(){
     var $parentItemActions = $(this).parents('.item-actions');
     $('.item-actions').not($parentItemActions).removeClass('open');
     $parentItemActions.toggleClass('open');    
