@@ -11,7 +11,7 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 * {box-sizing: border-box;}
 .flex {display: flex;}
 
-.demo-wrap { padding-bottom: 120px;}
+/* .demo-wrap { padding-bottom: 120px;} */
 .demo-wrap h1 {padding: 0px 50px; text-align: left; width: 100%; font-size: 0; height: 80px; display: flex; align-items: center;}
 .demo-wrap h1 img {width: 268px;}
 
@@ -21,12 +21,15 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 .demo-header h2 {font-size: 20px; font-weight: 800; word-break: keep-all;}
 .demo-header .item-actions {width: auto;}
 
+.demo-container {max-height: calc(100vh - 80px - 80px - 92px - 36px); overflow-y: auto;}
 
+.demo-tracklist-header {position: sticky; top: 0; z-index: 9;}
 .demo-tracklist-header .list-item {padding: 0px 50px 10px;}
 .demo-tracklist-header .list-item .header-border {
   align-items: center; justify-content: space-between;  flex-wrap: wrap; border-radius: 5px; padding:  11px; font-size: 10px; background: #f2fff9; font-weight: 800;
-
+  box-shadow: 0px 0px 4px rgb(0 61 47 / 10%);
   --item-action: 55px;
+  
 }
 .demo-tracklist-header .item-duration {font-size: inherit;}
 
@@ -91,7 +94,7 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 /*detailes*/
 .item-details.flex {align-items: center; width: calc(100% - var(--item-action)); flex-wrap: wrap;}
 
-.item-no {width: var(--item-no); font-weight: 600}
+.item-no {width: var(--item-no); font-weight: 600; position: relative; }
 
 .item-info-wrap {width: calc(var(--item-duration) - var(--item-genre) - var(--item-no) - var(--item-cd)); align-items: center; flex-wrap: wrap;}
 
@@ -266,6 +269,9 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
   .play-btn-list button {width: 34px; height: 34px;}
   .play-btn-list button i:before {font-size: 18px;}
   .play-btn-list button.play i:before {font-size: 28px;}
+
+  .control-right.flex {display: none;}
+  .control-center.flex {right: 0;}
 
 
 }
