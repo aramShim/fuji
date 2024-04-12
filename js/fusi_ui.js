@@ -43,7 +43,13 @@ function listItemActive(){
     var $parentListItem = $(this).closest('.list-item');
     $('.list-item').removeClass('active');
     $parentListItem.addClass('active');
-    $parentListItem.addClass('play'); 
+    if($parentListItem.hasClass('pause')){
+      $parentListItem.removeClass('pause');
+      $parentListItem.addClass('play');
+    }else if($parentListItem.hasClass('play')) {
+      $parentListItem.removeClass('play');
+      $parentListItem.addClass('pause');
+    }
     
     $('.player-wrap').addClass('active');
     $('.play-btn-list .play i').toggleClass('bi-play-fill bi-pause-fill'); 
@@ -58,6 +64,9 @@ function itemAction(){
     $('.item-actions').not($parentItemActions).removeClass('open');
     $parentItemActions.toggleClass('open');    
   })
+  $('.item-actions-list').on("mouseleave", function () {
+    $('.item-actions').removeClass("open");
+  });
 }
 
 function playControl(){

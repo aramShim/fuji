@@ -11,7 +11,7 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 * {box-sizing: border-box;}
 .flex {display: flex;}
 
-/* .demo-wrap { padding-bottom: 120px;} */
+.demo-wrap { padding-bottom: 120px;}
 .demo-wrap h1 {padding: 0px 50px; text-align: left; width: 100%; font-size: 0; height: 80px; display: flex; align-items: center;}
 .demo-wrap h1 img {width: 268px;}
 
@@ -21,7 +21,7 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 .demo-header h2 {font-size: 20px; font-weight: 800; word-break: keep-all;}
 .demo-header .item-actions {width: auto;}
 
-.demo-container {max-height: calc(100vh - 80px - 80px - 92px - 36px); overflow-y: auto;}
+/* .demo-container {max-height: calc(100vh - 80px - 80px - 92px - 36px); overflow-y: auto;} */
 
 .demo-tracklist-header {position: sticky; top: 0; z-index: 9;}
 .demo-tracklist-header .list-item {padding: 0px 50px 10px;}
@@ -75,8 +75,7 @@ linear-gradient(to right bottom,#e2ffea,#cfe4f7);
 
 /* .item-actions-list {display: none;} */
 .item-actions {position: relative;}
-.item-actions-list {display: none; position: absolute;  width: 90px; background: #fff; border-radius: 5px; padding: 0 0 6px 0; box-shadow: 1px 1px 3px rgba(0,0,0,.15);  z-index: 9; min-width: 100%; top: 40px;}
-.item-actions-list li.all-download a {background: #e8fff3; border-bottom: 1px dashed #ccc;}
+.item-actions-list {display: none; position: absolute;  width: 90px; background: #fff; border-radius: 5px; padding: 0 0 6px 0; box-shadow: 1px 1px 3px rgba(0,0,0,.15);  z-index: 99; min-width: 100%; top: 40px;}
 .item-actions-list a {font-size: 13px; padding: 6px 16px; display: inline-block; width: 100%;}
 .item-actions-list a span {display: inline-block; padding-left: 8px;}
 .item-actions-list a:hover {background-color: #f9f9f9;}
